@@ -1,0 +1,13 @@
+CREATE DATABASE `peoplemanagement` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE TABLE `employee` (
+  `idemployee` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(25) NOT NULL,
+  `birth_date` date NOT NULL,
+  `gender` varchar(15) NOT NULL,
+  `email` varchar(25) NOT NULL,
+  `start_date` date NOT NULL,
+  `team` varchar(10) DEFAULT NULL,
+  `cpf` varchar(15) NOT NULL,
+  PRIMARY KEY (`idemployee`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
